@@ -1,6 +1,7 @@
 package com.example.pdftest;
 
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.io.FileOutputStream;
 import java.io.OutputStream;
@@ -20,5 +21,9 @@ public class SimpleUsage {
             builder.toStream(os);
             builder.run();
         }
+    }
+    @GetMapping("/test")
+    public void test(){
+
     }
 }
